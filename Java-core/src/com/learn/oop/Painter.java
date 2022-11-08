@@ -5,7 +5,7 @@ public class Painter extends Employee {
 	Integer total=bonus+baseSalary;
 	public static void main(String[] args) {
 		Painter p1=new Painter();
-		System.out.println("Total salary:"+p1.total);
+		System.out.println("Painter's Total salary:"+p1.total);
 	}
 
 }
