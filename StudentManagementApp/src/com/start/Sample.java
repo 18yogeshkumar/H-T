@@ -45,11 +45,22 @@ public class Sample {
 	        }
 	        if(choice==2)
 	        {
+	        	System.out.println("Enter student's id to delete");
+	        	int studentId=Integer.parseInt(b.readLine());
 	        	
+	        	boolean status=StudentDao.deleteStudentToDB(studentId);
+	        	if(status)
+	        	{
+	        		System.out.println("Record delete");
+	        	}
+	        	else
+	        	{
+	        		System.out.println("Record could not be deleted");
+	        	}
 	        }
 	        if(choice==3)
 	        {
-	        	
+	        	StudentDao.getAllStudent();
 	        }
 	        if(choice==4)
 	        {

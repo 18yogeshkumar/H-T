@@ -8,7 +8,7 @@ public class ConnectionProvider {
 	
 	static Connection con;
 	
-	public static Connection creatConnection()
+	public static Connection createConnection()
 	{
 		try 
 		{
